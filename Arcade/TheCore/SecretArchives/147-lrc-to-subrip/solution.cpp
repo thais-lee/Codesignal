@@ -1,10 +1,5 @@
 //hàm chuyển đổi định dạng thời gian
-#include<iostream>
-#include<string>
-#include<time.h>
-#include<>
-using namespace std;
-string l2sr_time(std::string time) {//time MM:SS.xx
+std::string l2sr_time(std::string time) {//time MM:SS.xx
     time = "00:" + time + "0";  // 00:MM:SS.xx0
     time[time.find('.')] = ',';  // 00:MM:SS,xx0
     if (time[3] >= '6') {
